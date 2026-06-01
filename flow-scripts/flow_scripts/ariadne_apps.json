@@ -1,0 +1,48 @@
+[
+  {
+    "app_id": "machine_profiling_assistant",
+    "ui_name": "Machine Data Profiler",
+    "context_description": "Analyse von Maschinendaten (CSV/JSON) zur Erstellung eines semantischen Machine Profiles inklusive Einheiten und Datentypen.",
+    "linked_skills": [
+      "machine-data-profiler"
+    ],
+    "linked_ltm_dataspaces": [
+      "default_ltm_dataspace"
+    ],
+    "initial_prompt": "Ich möchte eine neue Maschine onboarden. Hilf mir dabei, die vorhandenen CSV- oder JSON-Dateien zu analysieren und ein semantisches Machine Profile zu erstellen.",
+    "metadata": {
+      "category": "onboarding"
+    }
+  },
+  {
+    "app_id": "connector_development_agent",
+    "ui_name": "Connector Developer",
+    "context_description": "Automatisierte Generierung und Validierung von Python-Konnektoren basierend auf Machine Profiles und Ziel-Spezifikationen.",
+    "linked_skills": [
+      "connector-generator"
+    ],
+    "linked_ltm_dataspaces": [
+      "default_ltm_dataspace"
+    ],
+    "initial_prompt": "Ich habe bereits ein Machine Profile. Hilf mir jetzt, basierend auf diesem Profil und meiner Ziel-Spezifikation einen validen Python-Konnektor zu entwickeln und zu testen.",
+    "metadata": {
+      "category": "implementation"
+    }
+  },
+  {
+    "app_id": "end_to_end_onboarding",
+    "ui_name": "E2E Machine Onboarding",
+    "context_description": "Der vollständige agentische Workflow: Von der Datenexploration bis zum fertig validierten industriellen Konnektor.",
+    "linked_skills": [
+      "machine-data-profiler",
+      "connector-generator"
+    ],
+    "linked_ltm_dataspaces": [
+      "default_ltm_dataspace"
+    ],
+    "initial_prompt": "Starte den vollständigen Onboarding-Prozess: Von der explorativen Analyse der Maschinendaten bis hin zur Erstellung eines validierten Konnektors.",
+    "metadata": {
+      "category": "onboarding"
+    }
+  }
+]
